@@ -201,7 +201,7 @@ main>article>.article-nav-section {
 }
 
 main>article:first-child>.article-image-section {
-  background-image: url(../images/image1.avif);
+  background-image: url(../images/image1.jpg);
 }
 
 main>article:nth-child(2)>.article-image-section {
@@ -256,9 +256,8 @@ main>article>.article-title-section * {
 }
 
 main>article>.article-title-section>h2 {
-  font-weight:bolder;
   flex-basis: 50%;
-  font-family: SF;
+  font-family: "Montserrat", sans-serif;
   font-size: 3.5rem;
   line-height: 3rem;
   margin: 0px;
@@ -437,11 +436,5 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
 
 main>article>.article-description-section>p>.source-link {
   color: var(--highlight-color);
-  display: inline;
-}
-
-main>article .yt-link,
-main>article .yt-link>i {
-  color: var(--yt-color);
   display: inline;
 }
