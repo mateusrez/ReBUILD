@@ -1,6 +1,3 @@
-
-/* -- Carousel Navigation -- */
-
 let activeIndex = 0;
 
 const slides = document.getElementsByTagName("article");

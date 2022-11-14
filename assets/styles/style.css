@@ -1,8 +1,7 @@
 :root {
-  --background-color: rgb(6, 11, 25);
+  --background-color: rgb(5, 10, 24);
   --border-color: rgb(255, 255, 255, 0.1);
-  --highlight-color: rgb(126, 87, 194);
-  --yt-color: rgb(229, 57, 53);
+  --highlight-color: rgb(31, 50, 143);
   --color-white: #fff;
   --color-dark1: #272727;
   --color-dark2: #2d2d2d;
@@ -37,7 +36,6 @@ body {
 * {
   box-sizing: border-box;
 }
-
 
 
 h1,
@@ -430,11 +428,4 @@ main>article>.article-nav-section>.article-nav-button:nth-child(2) {
   main>article>.article-description-section>p {
     font-size: 1rem;
   }
-}
-
-/* -- YT link / Source link styles -- */
-
-main>article>.article-description-section>p>.source-link {
-  color: var(--highlight-color);
-  display: inline;
 }
