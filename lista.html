@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/lista.css">
+    <title>ReBuild YOUR ROUTINE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik&display=swap"
+        rel="stylesheet">
+
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js">
+    </script>
+    <script src="https://kit.fontawesome.com/4458f38c76.js" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/944eb371a4.js'></script>
+</head>
+
+<body translate="no">
+    <nav data-toggled="false" data-transitionable="false">
+        <div id="nav-logo-section" class="nav-section">
+            <a href="#" target="_blank"
+                style="font-family:'Morning Routine Regular';font-weight:normal;font-size:24px;">ReBuild YOUR
+                ROUTINE.</a>
+        </div>
+        <div id="nav-mobile-section">
+            <div id="nav-link-section" class="nav-section">
+                <a href="#"><b>SOBRE NÓS</b></a>
+                <a href="index.html"><b>DICAS</b></a>
+            </div>
+            <div id="nav-social-section" class="nav-section">
+                <a>
+                    <i class="fa-regular fa-calendar"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </div>
+            <div id="nav-contact-section" class="nav-section">
+                <a href="#"><b>ENTRE EM COTATO</b></a>
+            </div>
+        </div>
+        <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+            <span>MENU</span>
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <div class="content">
+        <div class="top">
+            <input type="text" id="inputNovaTarefa" placeholder="Adicione uma nova tarefa">
+            <button id="btnAddTarefa">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+
+        <ul id="listaTarefas">
+        </ul>
+    </div>
+
+    <div id="janelaEdicao">
+        <button id="janelaEdicaoBtnFechar">
+            <i class="fa-regular fa-trash"></i>
+        </button>
+        <h2 id="idTarefaEdicao">#1021</h2>
+        <hr>
+        <form>
+            <div class="frm-linha">
+                <label for="nome">Nome</label>
+                <input type="text" id="inputTarefaNomeEdicao">
+            </div>
+            <div class="frm-linha">
+                <button id="btnAtualizarTarefa">Salvar</button>
+            </div>
+        </form>
+    </div>
+    <div id="janelaEdicaoFundo"></div>
+
+    <script src="assets/scripts/lista.js"></script>
+</body>
+
+</html>
