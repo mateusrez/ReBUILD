@@ -15,9 +15,10 @@
 
     <script
         src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js">
-    </script>
+        </script>
     <script src="https://kit.fontawesome.com/4458f38c76.js" crossorigin="anonymous"></script>
     <script src='https://kit.fontawesome.com/944eb371a4.js'></script>
+
 </head>
 
 <body translate="no">
@@ -53,37 +54,58 @@
         </button>
     </nav>
 
-    <div class="content">
-        <div class="top">
-            <input type="text" id="inputNovaTarefa" placeholder="Adicione uma nova tarefa">
-            <button id="btnAddTarefa">
-                <i class="fa-solid fa-plus"></i>
-            </button>
+    <section>
+        <div class="content">
+            <div class="top">
+                <input type="text" id="inputNovaTarefa" placeholder="Adicione uma nova tarefa">
+                <button id="btnAddTarefa">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+
+            <ul id="listaTarefas">
+            </ul>
         </div>
 
-        <ul id="listaTarefas">
-        </ul>
-    </div>
+        <div id="janelaEdicao">
+            <button id="janelaEdicaoBtnFechar">
+                <i class="fa-regular fa-trash"></i>
+            </button>
+            <h2 id="idTarefaEdicao">#1021</h2>
+            <hr>
+            <form>
+                <div class="frm-linha">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="inputTarefaNomeEdicao">
+                </div>
+                <div class="frm-linha">
+                    <button id="btnAtualizarTarefa">Salvar</button>
+                </div>
+            </form>
+        </div>
+        <div id="janelaEdicaoFundo"></div>
 
-    <div id="janelaEdicao">
-        <button id="janelaEdicaoBtnFechar">
-            <i class="fa-regular fa-trash"></i>
-        </button>
-        <h2 id="idTarefaEdicao">#1021</h2>
-        <hr>
-        <form>
-            <div class="frm-linha">
-                <label for="nome">Nome</label>
-                <input type="text" id="inputTarefaNomeEdicao">
-            </div>
-            <div class="frm-linha">
-                <button id="btnAtualizarTarefa">Salvar</button>
-            </div>
-        </form>
-    </div>
-    <div id="janelaEdicaoFundo"></div>
+    </section>
 
-    <script src="assets/scripts/lista.js"></script>
+    <script src="assets/scripts/lista.js">
+
+    /* -- MENU MOBILE -- */
+
+    const nav = document.querySelector("nav");
+
+    const handleNavToggle = () => {
+    nav.dataset.transitionable = "true";
+
+    nav.dataset.toggled = nav.dataset.toggled === "true" ? "false" : "true";
+    };
+
+    window.matchMedia("(max-width: 800px)").onchange = e => {
+    nav.dataset.transitionable = "false";
+
+    nav.dataset.toggled = "false";
+    };
+    //# sourceURL=pen.js
+    </script>
 </body>
 
 </html>
