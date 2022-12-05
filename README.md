@@ -1,7 +1,14 @@
 # Sprint-3: ReBuild YOUR ROUTINE
 ### Repositório do GitHub, contendo todas as atualizações e versões do projeto de Procrastinação E Organização do Dia a Dia.
 
-### [Acesse meu site](https://mateusrez.github.io/ReBUILD/ "Google's Homepage")
+
+
+https://github.com/mateusrez/ReBUILD
+### [Acesse o site](https://mateusrez.github.io/ReBUILD/ "ReBUILD")
+### [Acesse o repositório](https://github.com/mateusrez/ReBUILD/ "Open ReBUILD")
+
+
+
 
 ## Alunos integrantes da equipe
 
