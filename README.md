@@ -1,4 +1,4 @@
-# Sprint-3: ReBuild YOUR ROUTINE
+# Sprint: ReBuild YOUR ROUTINE
 ### Repositório do GitHub, contendo todas as atualizações e versões do projeto de Procrastinação E Organização do Dia a Dia.
 
 
